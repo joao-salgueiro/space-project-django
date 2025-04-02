@@ -6,7 +6,7 @@ class ListPhotographs(admin.ModelAdmin):
     list_display = ("id", "name", "subtitle", "description", "publicated")
     list_display_links = ("id", "name")
     search_fields = ["id", "name"]
-    list_filter = ("category",)
+    list_filter = ("category", "user")
     list_editable = ("publicated",)
     list_per_page = 10
     
